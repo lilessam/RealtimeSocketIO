@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link href="/stylesheets/frontend.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <tasks title="<%= title %>" :db-tasks='<%- JSON.stringify(tasks) %>'></tasks>
+            </div>
+        </div>
+        <script src="/javascripts/frontend.js" type="text/javascript">
+        </script>
+    </body>
+</html>
