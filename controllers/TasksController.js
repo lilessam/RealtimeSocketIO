@@ -82,7 +82,7 @@ module.exports = function(io) {
             //Render view and pass DB tasks to it
             gettingTaskspromise.then(function(tasks) {
             	res.render('index', {
-                    title: 'Express',
+                    title: 'Real-time nodejs application',
                     tasks : tasks
                 });
             });
